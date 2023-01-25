@@ -1,0 +1,26 @@
+{
+  "name": "lexicaart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "node ./examples/create.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiscruzga/lexicaart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luiscruzga/lexicaart/issues"
+  },
+  "homepage": "https://github.com/luiscruzga/lexicaart#readme",
+  "dependencies": {
+    "axios": "^1.2.4",
+    "querystring": "^0.2.1",
+    "short-unique-id": "^4.4.4"
+  }
+}
