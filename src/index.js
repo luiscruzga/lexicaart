@@ -73,6 +73,9 @@ class LexicaArt {
         numImagesGenerated: 0
       }
       const res = await axios.post(CREATE_URL, payload, { headers });
+      if (res.data.bannedTerms && res.data.bannedTerms.length > 0) {
+        throw new Error('This words is banned: ', res.data.bannedTerms.join(','));
+      }
       res.data.prompt.images = res.data.images;
       return res.data.prompt;
     } catch (e) {
